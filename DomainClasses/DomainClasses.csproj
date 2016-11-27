@@ -55,6 +55,7 @@
     <Compile Include="Quadra.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reserva.cs" />
+    <Compile Include="PedidoReservaQuadra.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

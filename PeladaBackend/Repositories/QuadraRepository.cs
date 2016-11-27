@@ -13,6 +13,11 @@ namespace PeladaBackend.Repositories
     {
         const string ConnectionString = @"mongodb://quadrasdb:CGLXYaQ24dTrGK7GpNe8LrKx3mjH94fyYCB5v19iK6qS1GE2qtPeYYPTjhja5vCctZctZlwlH1CmdqpAWXmeXA==@quadrasdb.documents.azure.com:10250/?ssl=true&sslverifycertificate=false";
 
+        static SslSettings sslSettings = new SslSettings()
+        {
+            EnabledSslProtocols = SslProtocols.Tls12
+        };
+
         public Quadra Get(string id)
         {
             IMongoCollection<Quadra> quadrasCollection = obterReferenciaParaColecaoQuadra();
@@ -31,14 +36,12 @@ namespace PeladaBackend.Repositories
         private static IMongoCollection<Quadra> obterReferenciaParaColecaoQuadra()
         {
             MongoClientSettings settings = MongoClientSettings.FromUrl(new MongoUrl(ConnectionString));
-            settings.SslSettings = new SslSettings()
-            {
-                EnabledSslProtocols = SslProtocols.Tls12
-            };
+            settings.SslSettings = sslSettings;
 
             var mongoClient = new MongoClient(settings);
             var database = mongoClient.GetDatabase("admin");
             var quadrasCollection = database.GetCollection<Quadra>("quadras");
+
             return quadrasCollection;
         }
     }

@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "PeladaService", "PeladaService.ccproj", "{E56EACAE-7483-42B1-8453-8C1143F4998F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeladaBackend", "PeladaBackend\PeladaBackend.csproj", "{CE019CC1-2B36-4E93-8CF2-59B300C54CEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainClasses", "DomainClasses\DomainClasses.csproj", "{DDB88CEF-077E-42E6-8F74-27FDD3192FA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CE019CC1-2B36-4E93-8CF2-59B300C54CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE019CC1-2B36-4E93-8CF2-59B300C54CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE019CC1-2B36-4E93-8CF2-59B300C54CEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB88CEF-077E-42E6-8F74-27FDD3192FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB88CEF-077E-42E6-8F74-27FDD3192FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB88CEF-077E-42E6-8F74-27FDD3192FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB88CEF-077E-42E6-8F74-27FDD3192FA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

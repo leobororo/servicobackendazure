@@ -11,7 +11,9 @@ namespace DomainClasses
     [Serializable]
     public class Quadra
     {
-        public ObjectId _id
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string _id
         {
             get;
             set;
